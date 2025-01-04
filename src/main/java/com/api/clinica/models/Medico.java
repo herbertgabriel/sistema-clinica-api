@@ -1,5 +1,6 @@
 package com.api.clinica.models;
 
+import com.api.clinica.DTOs.DTOCadastroMedico;
 import com.api.clinica.DTOs.DTOEndereco;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -20,4 +21,12 @@ public class Medico {
 
     @Embedded
     private Endereco endereco;
+
+    public Medico(DTOCadastroMedico medico) {
+        this.nome = medico.nome();
+        this.email = medico.email();
+        this.crm = medico.crm();
+        this.especialidade = medico.especialidade();
+        this.endereco = new Endereco(medico.endereco());
+    }
 }
