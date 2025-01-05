@@ -1,8 +1,7 @@
 package com.api.clinica.models;
 
-import com.api.clinica.DTOs.DTOAtualizarMedico;
-import com.api.clinica.DTOs.DTOCadastroMedico;
-import com.api.clinica.DTOs.DTOEndereco;
+import com.api.clinica.DTOs.medico.DTOAtualizarMedico;
+import com.api.clinica.DTOs.medico.DTOCadastroMedico;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.Data;
@@ -27,7 +26,7 @@ public class Medico {
     @Embedded
     private Endereco endereco;
 
-    private boolean ativo;
+    private Boolean ativo;
 
     public Medico(DTOCadastroMedico medico) {
         this.nome = medico.nome();

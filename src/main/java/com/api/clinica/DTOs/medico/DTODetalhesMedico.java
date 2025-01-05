@@ -1,4 +1,4 @@
-package com.api.clinica.DTOs;
+package com.api.clinica.DTOs.medico;
 
 import com.api.clinica.models.Endereco;
 import com.api.clinica.models.Especialidade;

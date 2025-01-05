@@ -1,5 +1,6 @@
-package com.api.clinica.DTOs;
+package com.api.clinica.DTOs.medico;
 
+import com.api.clinica.DTOs.DTOEndereco;
 import com.api.clinica.models.Especialidade;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;

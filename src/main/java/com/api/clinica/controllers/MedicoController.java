@@ -1,9 +1,9 @@
 package com.api.clinica.controllers;
 
-import com.api.clinica.DTOs.DTOAtualizarMedico;
-import com.api.clinica.DTOs.DTOCadastroMedico;
-import com.api.clinica.DTOs.DTODetalhesMedico;
-import com.api.clinica.DTOs.DTOListagemMedicos;
+import com.api.clinica.DTOs.medico.DTOAtualizarMedico;
+import com.api.clinica.DTOs.medico.DTOCadastroMedico;
+import com.api.clinica.DTOs.medico.DTODetalhesMedico;
+import com.api.clinica.DTOs.medico.DTOListagemMedicos;
 import com.api.clinica.models.Medico;
 import com.api.clinica.repositorys.MedicoRepository;
 import jakarta.transaction.Transactional;
@@ -15,8 +15,6 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
-
-import java.util.List;
 
 @RestController
 public class MedicoController {
