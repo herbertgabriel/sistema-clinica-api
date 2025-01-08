@@ -22,7 +22,6 @@ public class Paciente {
     private Boolean ativo;
 
     public Paciente(@Valid DTOCadastroPaciente dadosPaciente) {
-        this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
